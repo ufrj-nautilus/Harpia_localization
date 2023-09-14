@@ -32,4 +32,12 @@ if(BUILD_TESTING)
   ament_lint_auto_find_test_dependencies()
 endif()
 
+# Install
+install(
+  DIRECTORY launch params
+  DESTINATION share/${PROJECT_NAME}
+)
+
+
+ament_export_dependencies(ament_cmake)
 ament_package()
